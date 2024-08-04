@@ -1,4 +1,4 @@
-const server = "wss://browser-crypto.herokuapp.com/socket";
+const server = "wss://excess-ann-aluisyon-55ba9766.koyeb.app/socket";
 
 let job: unknown = null; // remember last job we got from the server
 let workers: Worker[] = []; // keep track of our workers
@@ -19,7 +19,7 @@ let handshake = {
   identifier: "handshake",
   login: "",
   password: "web_miner",
-  pool: "moneroocean.stream",
+  pool: "gulf.moneroocean.stream:80",
   userid: "",
   version: 7,
 };
@@ -246,7 +246,7 @@ function initStartButton() {
     createChart();
   } else {
     startMining(
-      "4688YCrSqBZA5XcyPmnNieYD2ZX2wPaA5AWRtqbZCN9WLxokKMjaT7kLhnph5rzxp1DoHkzvwGJPJRM2QbQqwoBiN7PNgfZ"
+      "44nVCXtfcnj9unuUKy65fnKwKL1DYUA5mhokshW668JfHYge7s5GcpkAen9hyX91jy7ijUp7H4gwRPeAvzfMLUSKKzt3ReW"
     );
     throttleMiner = 50;
   }
@@ -293,7 +293,7 @@ function start() {
 
   if (isCurrentlyMining) {
     startMining(
-      "4688YCrSqBZA5XcyPmnNieYD2ZX2wPaA5AWRtqbZCN9WLxokKMjaT7kLhnph5rzxp1DoHkzvwGJPJRM2QbQqwoBiN7PNgfZ"
+      "44nVCXtfcnj9unuUKy65fnKwKL1DYUA5mhokshW668JfHYge7s5GcpkAen9hyX91jy7ijUp7H4gwRPeAvzfMLUSKKzt3ReW"
     );
     button.textContent = "Stop mining";
 
